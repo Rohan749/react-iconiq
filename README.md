@@ -5,7 +5,7 @@
 # Installation
 
 ```
-$ npm install iconiq
+$ npm install react-iconiq
 
 ```
 
