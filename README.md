@@ -17,6 +17,7 @@ $ npm install react-iconiq
 - Reduced Code Length: Light React-based library that minimizes the amount of code needed.
 - Customization Flexibility: Users can effortlessly apply their own customizations.
 - Form Group Creation: Instantly generate form groups by simply adding a single <IcoFormControl> tag, enhancing efficiency and reducing development time.
+- Custom Alerts: Users receive personalized alert messages for incorrect inputs across all fields.
 
 # This is how you would write input fields in forms:
 
@@ -137,7 +138,8 @@ function LoginForm() {
 export default LoginForm;
 ```
 
-Now with Iconiq!
+Now with Iconiq's IcoFormControl!
+
 
 
 ```jsx
@@ -160,17 +162,30 @@ function App() {
     e.preventDefault();
   };
   return (
-    <IcoFormControl entries={[
-        { type: "name", value: { name }, onChange: (e) => setName(e.target.value) },
-        { type: "email", value: { email }, onChange: (e) => setEmail(e.target.value) },
-        { type: "password",value: { password }, onChange: (e) => setPassword(e.target.value) },
+    <IcoFormControl formType="login" entries={[
+        { type: "name", value: { data:name }, onChange: (e) => setName(e.target.value) },
+        { type: "email", value: { data:email }, onChange: (e) => setEmail(e.target.value) },
+        { type: "password",value: { data:password }, onChange: (e) => setPassword(e.target.value) },
       ]}
     />
   );
 }
 ```
+Not just this! You get all the constraints according to the input field!
+Look at the video demonstration below:
+
+
+[Screencast from 02-04-24 01:12:16 PM IST.webm](https://github.com/Rohan749/react-iconiq/assets/90546860/ec3a0ffc-6f43-4791-9ffd-939c76d405c9)
 
 That's it! See how simple it was? Try it on your local pc.
+
+
+# IcoFormControl Props:
+
+- formType: "login" or "signup"
+- entries: [...] (array of object containing: type, value, onChange. You can pass other props also to manipulate it)
+
+<br/>
 
 
 # Other props...
