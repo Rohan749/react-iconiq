@@ -56,6 +56,9 @@ function App() {
 }
 ```
 
+
+[Screencast from 02-04-24 12:39:04 PM IST.webm](https://github.com/Rohan749/react-iconiq/assets/90546860/04ef3706-612a-439f-9bb8-0ce910a53e4c)
+
 That's it! You got your input. All the placeholders, icons and stylings are already added into it!
 What about the theme? The CSS styling is super minimalistic, so it blends seamlessly with any theme you've got going on.
 
