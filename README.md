@@ -1,4 +1,4 @@
-# ICONIQ for ReactJS
+# Iconiq for ReactJS
 
 🎉 Iconiq simplifies React with easy props for styled inputs, customizable icons, compatible with dark/light themes. Plus, it reduces your code length and lets you create form groups effortlessly!
 
